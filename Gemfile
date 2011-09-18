@@ -11,6 +11,7 @@ gem 'rack-flash'
 gem 'compass'
 gem 'haml'
 gem 'dalli'
+gem 'rack-google-analytics', :require => 'rack/google-analytics'
 
 # Test requirements
 gem 'rspec', :group => "test"

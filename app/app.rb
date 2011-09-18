@@ -6,6 +6,7 @@ class Accordio < Padrino::Application
 
 
   enable :sessions
+  use Rack::GoogleAnalytics, :tracker => "UA-11724911-1"
 
   ##
   # Caching support

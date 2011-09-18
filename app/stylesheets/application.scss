@@ -16,6 +16,10 @@ body {
   background-image: url('/images/background.png');
   background-repeat: no-repeat;
 
+  .twitter {
+    float: right;
+  }
+
   .frame {
     @include container;
     margin-top: 50px;
