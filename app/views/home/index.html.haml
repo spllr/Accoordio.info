@@ -1,0 +1,54 @@
+.frame
+  .header
+    %h1
+      THE AwesomeST ACCORDIONS IN THE WORLD. *
+
+  .apps
+    .app.piano
+      =link_to "http://www.itunes.com/app/PianoAccordioPro" do
+        =image_tag 'piano.png'
+      %h4
+        Piano Accordio Pro
+      
+      .links
+        =link_to "iPhone", "http://www.itunes.com/app/PianoAccordio", :title => "Dowload for iPhone"
+        \/
+        =link_to "iPad", "http://www.itunes.com/app/PianoAccordioPro", :title => "Dowload for iPad"
+    
+    .app.pianopro
+      =link_to "http://www.itunes.com/app/AccordioPro" do
+        =image_tag 'pianopro.png'
+      %h4
+        Accordio Pro
+
+      .links
+        =link_to "iPhone", "http://www.itunes.com/app/Accordio", :title => "Dowload for iPhone"
+        \/
+        =link_to "iPad", "http://www.itunes.com/app/AccordioPro", :title => "Dowload for iPad"
+
+  .details
+    =link_to "http://www.itunes.com/app/PianoAccordioPro" do
+      =image_tag 'availableonappstore.png'
+
+  .movies
+    %h2
+      Watch Accordio in Action
+
+    - ["ORxmL9JZUHw",
+    "viAJBIiGQN0",
+    "Uzi9j19I7v8",
+    "6MCl3gVUheg",
+    "qCilyw71r6g",
+    "WQMuEdgs0I4",
+    "R7TFXV65YVc",
+    "KrzCOFegn_o",
+    "K3ekqD038SY",
+    "IBHeEmKQ_uI",
+    "6er_RLIGSyM",
+    "qsnsikmveII",
+    "X6BRZc7NcSs",
+    "R7TFXV65YVc",
+    "Sn0mK71D8m0"].each do |vid|
+      .movie
+        =link_to "http://www.youtube.com/watch?v=#{vid}", :rel => "prettyPhoto", :title => "Watch Accordio in action" do
+          =image_tag "http://img.youtube.com/vi/#{vid}/2.jpg", :alt => "Watch Accordio in action"

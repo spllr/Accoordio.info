@@ -1,0 +1,101 @@
+@import "blueprint/reset";
+@import "partials/base";
+@import "blueprint";
+@import "compass/css3/border-radius";
+@import "compass/css3/gradient";
+
+
+body {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+
+  background-color: #0d0d0d;
+  font-family: Antic, Arial;
+  background-image: url('/images/background.png');
+  background-repeat: no-repeat;
+
+  .frame {
+    @include container;
+    margin-top: 50px;
+  }
+
+  .header {
+    h1 {
+      font-variant: 'regular';
+      color: #FFF;
+      margin-bottom: 50px;
+    }
+  }
+
+  .apps {
+    @include column(18);
+    text-align: center;
+    .app {
+      @include column(7);
+      @include border-radius(10px);
+      padding-top: 10px;
+      background-image: url('/images/framebg.png');
+      background-repeat: no-repeat;
+      img {
+        width: 235px;
+      }
+      h4 {
+        margin-top: 5px;
+        text-align: center;
+        color: #FFF;
+      }
+    }
+    .pianopro {
+      margin-left: 70px;
+    }
+    .links {
+      color: #FFF;
+      a {
+        color: #FFF;
+      }
+    }
+  }
+
+  .details {
+    @include column(6, true);
+    text-align: center;
+  }
+
+  .movies {
+    @include column(22);
+    padding-top: 60px;
+    margin-bottom: 80px;
+    h2 {
+      color: #FFF;
+      margin-left: 20px;
+    }
+    .movie {
+      @include column(4);
+      @include border-radius(5px);
+      background-image: url('/images/framebg.png');
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      text-align: center;
+      background-color: #FFF;
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .footer {
+    @include container;
+    div {
+      float: left;
+      line-height: 90px;
+      margin-right: 15px;
+      color: #EEE;
+      a {
+        color: #FFF;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title
+      Accoordio
+
+    =stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Antic', :prettyPhoto,  :application
+    =javascript_include_tag :jquery, 'jquery.prettyPhoto', :application
+
+    = meta_tag "Accoridion, Accdordio, Living Transient, Piano, Appsterdam", :name => "keywords"
+    = meta_tag "Piano Accordio Pro sounds like a traditional punchy Italian accordion. It is designed to be exeptionally rsponsive and fun to play.", :name => "description"
+    = meta_tag "@spllr of recce.nl", :name => "creator"
+
+    / Build in an hour by @spllr of Recce.nl 
+
+  %body
+    =yield
+
+  .footer
+    .copyright
+      &copy; 
+      = DateTime.now.year
+      LivingTransient
+
+    .appsterdam
+      LivingTransient is part of the 
+      =link_to "Appsterdam", "http://www.appsterdam.rs", :target => "_blank", :title => "Appsterdam"
+      Community
+    .appsterdam-logo
+      =link_to "http://www.appsterdam.rs", :target => '_blank', :title => "Appsterdam" do
+        =image_tag "appsterdam_logo.png", :alt => "Appsterdam"
+

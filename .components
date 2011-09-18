@@ -1,0 +1,7 @@
+--- 
+:orm: none
+:test: rspec
+:mock: mocha
+:script: jquery
+:renderer: haml
+:stylesheet: compass
